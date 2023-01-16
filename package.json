@@ -1,6 +1,5 @@
 {
   "name": "livechat",
-  "homepage": "https://just2102.github.io/livechat",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
