@@ -1,38 +1,85 @@
-.App {
+.app_container {
+    overflow-wrap: anywhere;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 5px;
+  background-color: #275a67;
+  color:aliceblue;
+  
+}
+.navbar h3 {
+  margin-right: auto;
+}
+/**/
+
+.welcome {
+  margin-top: 20%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* chatbox */
+.chatbox {
+  background-color: #023047;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.message_me,
+.message_else {
+  border-radius: 20px 20px 20px 0;
+  padding: 15px;
+  width: max-content;
+  max-width: 90%;
+  box-shadow: -2px 2px 1px 1px #4c768d;
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
+  margin-bottom: 20px;
+}
+.message_me {
+  background-color: #bed5ed;
+  margin-left: auto;
+}
+.message_else {
+  background-color: #219ebc;
+  margin-right: auto;
+}
+
+.message_me .message_sender,
+.message_me .message_body {
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
+}
+.message_else .message_sender,
+.message_else .message_body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.message_body {
+}
+
+/* send_message*/
+.send_message {
+  background-color: #7fa7c5;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 3rem;
+}
+.send_message textarea {
+  margin-left: auto;
+  width: 80%;
+  resize: none;
+}
+.send_message form {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
+  width: 100%;
 }
