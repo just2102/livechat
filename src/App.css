@@ -1,19 +1,45 @@
-.app_container {
-    overflow-wrap: anywhere;
+html, body, #root, .app_container {
+  height:100%
+}
+@font-face {
+  font-family: "robotolight";
+  src: url("./fonts/roboto-light-webfont.woff2") format("woff2"),
+    url("./fonts/roboto-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotomedium";
+  src: url("./fonts/roboto-medium-webfont.woff2") format("woff2"),
+    url("./fonts/roboto-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotobold_condensed_italic";
+  src: url("./fonts/roboto-boldcondenseditalic-webfont.woff2") format("woff2"),
+    url("./fonts/roboto-boldcondenseditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
+.app_container {
+  display: grid;
+  overflow-wrap: anywhere;
+}
 
 .navbar {
+  font-family: robotobold_condensed_italic;
   display: flex;
   justify-content: end;
   align-items: center;
   padding: 5px;
   background-color: #275a67;
-  color:aliceblue;
-  
+  color: aliceblue;
 }
 .navbar h3 {
   margin-right: auto;
+  margin-left: 10px;
 }
 /**/
 
@@ -25,6 +51,11 @@
 /* chatbox */
 .chatbox {
   background-color: #023047;
+  font-family: robotolight;
+}
+.chatbox img {
+  border-radius: 10px;
+  padding: 6px;
 }
 
 .message_me,
@@ -61,25 +92,49 @@
   align-items: center;
 }
 
+.message_sender {
+  font-family: robotomedium;
+}
+
 .message_body {
 }
 
 /* send_message*/
-.send_message {
+.send_message_container {
   background-color: #7fa7c5;
   display: flex;
   justify-content: end;
   align-items: center;
-  height: 3rem;
 }
-.send_message textarea {
+.send_message_container textarea {
+  border-radius: 10px;
   margin-left: auto;
   width: 80%;
   resize: none;
+  outline: none !important;
 }
-.send_message form {
+.send_message_container form {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+
+
+/*footer*/
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a9d1ef;
+}
+.footer a {
+  color:black;
+  text-decoration: none;
+  font-size: 42px;
+  transition: 200ms;
+}
+.footer a:hover {
+  transform: scale(1.1);
 }

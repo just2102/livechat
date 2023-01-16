@@ -25,7 +25,7 @@ const SendMessage = (props) => {
   };
 
   return (
-    <div className="send_message">
+    <div className="send_message_container">
       {/* <img src={photoURL} alt="" /> */}
       <form onSubmit={onMessageSubmit}>
         <textarea

@@ -13,7 +13,7 @@ const Navbar = (props) => {
         auth.signOut()
     }
     return ( 
-        <div className="navbar">
+        <header className="navbar">
             <h3>LiveChat</h3>
             {!user && <Button type="primary" onClick={googleSignIn}>Sign in</Button>}
             {user && 
@@ -21,7 +21,7 @@ const Navbar = (props) => {
                 <span>Hi, {user.displayName}</span>
                 <Button type="link" onClick={googleSignOut}>Sign out</Button> 
             </div>} 
-        </div>
+        </header>
      );
 }
  

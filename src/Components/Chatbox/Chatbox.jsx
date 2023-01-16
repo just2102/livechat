@@ -38,7 +38,6 @@ const Chatbox = (props) => {
       {messages.map((message) => {
         return <Message message={message} user={props.user}></Message>;
       })}
-        <SendMessage user={props.user} />
     </div>
   );
 };
