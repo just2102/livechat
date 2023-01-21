@@ -22,6 +22,10 @@ html, body, #root, .app_container {
   font-weight: normal;
   font-style: normal;
 }
+.preloader {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .app_container {
   display: grid;
@@ -107,6 +111,9 @@ html, body, #root, .app_container {
   align-items: center;
 }
 .send_message_container textarea {
+  background: rgb(127 167 197 / 90%);
+  border-width: 2px;
+  border-color: aliceblue;
   border-radius: 10px;
   margin-left: auto;
   width: 80%;
